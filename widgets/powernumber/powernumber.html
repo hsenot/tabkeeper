@@ -1,0 +1,11 @@
+<h1 class="title" data-bind="title"></h1>
+
+<p class="state" data-bind="state"></p>
+
+<h2 class="value" data-bind="current | shortenedNumber | prepend prefix"></h2>
+
+<p class="change-rate">
+  <i data-bind-class="arrow"></i>Capacity:<span data-bind="capacity_used"></span>
+</p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
