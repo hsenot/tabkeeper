@@ -1,4 +1,1 @@
-tabkeeper
-=========
-
-A dashboard implementation based on Dashing
+Check out http://shopify.github.com/dashing for more information.
