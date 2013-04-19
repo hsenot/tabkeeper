@@ -1,0 +1,46 @@
+<% content_for(:title) { "My super sweet dashboard" } %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Power Generation" data-text="Track electricity dispatched in the Australian NEM."></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="FUEL_SHARE" data-view="List" data-unordered="true" data-suffix="%" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="GRAPH_ALL" data-view="Graph" data-title="" style="background-color:#ff9618"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_BLACK_COAL" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_BROWN_COAL" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_NATURAL_GAS" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_WATER" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_WIND" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="ALL_OTHERS" data-view="List" data-unordered="true" data-title="" data-moreinfo=""></div>
+    </li>
+
+  </ul>
+  <center><div style="font-size: 12px">Source JSON <a href="http://app.carbongis.com.au/nem2json/dispatch.json">here</a>.</div></center>
+</div>
