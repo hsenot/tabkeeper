@@ -1,3 +1,11 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [308, 308]
+  Dashing.numColumns = 6 
+});
+</script>
+
 <% content_for(:title) { "My super sweet dashboard" } %>
 <div class="gridster">
   <ul>
@@ -5,12 +13,16 @@
       <div data-id="welcome" data-view="Text" data-title="Power Generation" data-text="Track electricity dispatched in the Australian NEM."></div>
     </li>
 
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="GRAPH_ALL" data-view="Graph" data-title="" style="background-color:#ff9618"></div>
+    </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="FUEL_SHARE" data-view="List" data-unordered="true" data-suffix=" %" data-title="" data-moreinfo=""></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="GRAPH_ALL" data-view="Graph" data-title="" style="background-color:#ff9618"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ALL_OTHERS" data-view="List" data-unordered="true" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -35,10 +47,6 @@
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="ALL_WIND" data-view="Meter" data-title="" data-moreinfo="" data-min="0" data-max="2721"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="ALL_OTHERS" data-view="List" data-unordered="true" data-title="" data-moreinfo=""></div>
     </li>
 
   </ul>
