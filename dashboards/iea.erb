@@ -1,0 +1,69 @@
+<style>
+	h3 {
+		font-size:14px;
+	}
+</style>
+
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [300, 300]
+  Dashing.numColumns = 4
+});
+</script>
+
+
+<% content_for(:title) { "My super sweet dashboard" } %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="IEA-WELCOME" data-view="Text" data-title="Tracking Clean Energy Progress" data-text="IEA tracks progress towards a clean energy economy against 11 key areas." data-moreinfo="<a href='http://www.iea.org/publications/TCEP_web.pdf' target='blank'>2013</a>" style="background-color:grey;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI1" data-view="Text" data-title="Renewable power" data-text="On track to meet 2DS objectives in terms of absolute generation and investment levels. <br>Concentrating solar power, offshore wind, enhanced geothermal not advancing quickly enough." data-moreinfo="" style="background-color:green;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI2" data-view="Text" data-title="Nuclear power" data-text="Projected 2025 capacity 15%-32% below 2DS objectives. <br>Both new-build activity and long-term operation of existing reactors required to meet 2DS goals." data-moreinfo="" style="background-color:red;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI3" data-view="Text" data-title="Gas-fired power" data-text="Share in thermal generation has increased at the expense of coal in some regions, but not all." data-moreinfo="" style="background-color:orange;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI4" data-view="Text" data-title="Coal-fired power" data-text="Growth is outpacing increases in generation from non-fossil energy sources. <br>Projected global coal demand exceeds 2DS levels by 17% in 2017, higher than 6DS pathway." data-moreinfo="" style="background-color:red;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI5" data-view="Text" data-title="CCS" data-text="Capture capacity of projects currently operational or in pipeline is only 25% of 2DS 2020 target. <br>Still no large-scale integrated projects in power sector; and few in industry." data-moreinfo="" style="background-color:red;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI6" data-view="Text" data-title="Industry" data-text="Reasonable progress in improving energy efficiency, but there remains significant potential to deploy best available technology and optimise processes." data-moreinfo="" style="background-color:orange;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI7" data-view="Text" data-title="Fuel economy" data-text="Annual fuel economy improvement was 1.8% between 2008 and 2011, below the 2.7% 2DS target. 55% variation between countries shows the potential for improvement." data-moreinfo="" style="background-color:orange;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI8" data-view="Text" data-title="Electric and hybrid-electric vehicles" data-text="Deployment of EVs and HEVs on track to meet 2DS 2020 targets, but sales must increase by around 80% (EVs) and 50% (HEVs) each year to 2020. Large discrepancy between government targets and stated industry plans." data-moreinfo="" style="background-color:green;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI9" data-view="Text" data-title="Biofuels" data-text="Annual biofuels production must more than double to reach 2DS 2020 target. Advanced biofuels capacity must increase six-fold to 2020." data-moreinfo="" style="background-color:red;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI10" data-view="Text" data-title="Buildings" data-text="Large untapped potential to enhance energy performance of buildings and appliances. <br>Only three countries have best practice building code." data-moreinfo="" style="background-color:red;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="KPI11" data-view="Text" data-title="Smart grids" data-text="Demonstration and deployment of smart grid technologies is accelerating, but better data collection required for a complete picture of progress." data-moreinfo="" style="background-color:orange;"></div>
+    </li>
+
+  </ul>
+</div>
