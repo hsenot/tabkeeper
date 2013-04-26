@@ -1,12 +1,39 @@
+<style>
+	h1 {
+		font-size:24px;
+	}
+	h2 {
+		font-size:48px;
+	}
+	h3 {
+		font-size:14px;
+	}
+	h4 {
+		font-size:22px;
+	}
+</style>
+
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [300, 300]
+  Dashing.numColumns = 6 
+});
+</script>
+
 <% content_for(:title) { "My super sweet dashboard" } %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Wind" data-text="Track electricity provided by wind farms around Australia."></div>
+      <div data-id="welcome" data-view="Text" data-title="Wind" data-text="Track electricity provided by wind farms around Australia.<br><br><table style='border-collapse:separate;border-spacing:8px;'><tr><td bgcolor='#A9E2F3'>NSW</td><td bgcolor='#D0A9F5'>QLD</td><td bgcolor='#BCF5A9'>SA</td><td bgcolor='#F5A9BC'>TAS</td><td bgcolor='#F7BE81'>VIC</td></tr></table>"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ALL_WIND" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+      <div data-id="ALL_WIND" data-view="Meter" data-title="" data-moreinfo="MW" data-min="0" data-max="2721"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="GRAPH_WIND_CAPACITY_FACTOR" data-view="Graph" data-title="" style="background-color:#ff9618" data-moreinfo="%"></div>
     </li>
 
    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -14,31 +41,31 @@
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CNUNDAWF" data-view="Powernumber" data-title="Canunda (SA)" data-moreinfo=""></div>
+      <div data-id="CNUNDAWF" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CAPTL_WF" data-view="Powernumber" data-title="Capital (NSW)" data-moreinfo=""></div>
+      <div data-id="CAPTL_WF" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CATHROCK" data-view="Powernumber" data-title="Cathedral Rocks (SA)" data-moreinfo=""></div>
+      <div data-id="CATHROCK" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CHALLHWF" data-view="Powernumber" data-title="Challicum Hills (VIC)" data-moreinfo=""></div>
+      <div data-id="CHALLHWF" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CLEMGPWF" data-view="Powernumber" data-title="Clements Gap (SA)" data-moreinfo=""></div>
+      <div data-id="CLEMGPWF" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="CULLRGWF" data-view="Powernumber" data-title="Cullerin Range (NSW)" data-moreinfo=""></div>
+      <div data-id="CULLRGWF" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="GUNNING1" data-view="Powernumber" data-title="Gunning (NSW)" data-moreinfo=""></div>
+      <div data-id="GUNNING1" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -62,7 +89,19 @@
     </li>
 
    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="MACARTH1" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="MLWF1" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="MTMILLAR" data-view="Powernumber" data-title="" data-moreinfo=""></div>
+    </li>
+
+   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="MUSSELR1" data-view="Powernumber" data-title="" data-moreinfo=""></div>
     </li>
 
    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
